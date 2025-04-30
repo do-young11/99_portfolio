@@ -204,26 +204,27 @@ section.amenitie .amenitie-des {
 section.trekking {
     overflow: hidden;
 }
-section.trekking .trekking-wrap {
+section.trekking .trekking-cos {
     text-align: center;
     width: 100%;
-    outline: 2px solid salmon;
 }
-
-.trekking .trekking-wrap h2 {
+.trekking .trekking-cos h2 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    outline: 2px solid salmon;
 }
 
-
-.trekking-wrap .trekking-cos .cos {
+.trekking-cos .cos {
     float: left;
     width: 33.33%;
     position: relative;
 }
 
-.trekking-wrap .trekking-cos .cos img {
+.trekking-cos .cos img {
     display: block;
     height: 100%;
 }
