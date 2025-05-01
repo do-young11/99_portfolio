@@ -129,7 +129,7 @@ section.intro .intro-con {
 /* report************************ */
 section.report {
     background-color: #F5F5F2;
-    padding-top: 180px;
+    padding-top: 160px;
 }
 .report .report-box {
     width: 1280px;
@@ -163,6 +163,7 @@ section.report {
 }
 .report .report-box .report-img img {
     width: 100%;
+    display: block;
 }
 
 /* *amenitie*************************************** */
@@ -201,21 +202,9 @@ section.amenitie .amenitie-des {
 }
 
 /* *trekking*************************************************/
-section.trekking {
-    overflow: hidden;
-}
+
 section.trekking .trekking-cos {
     text-align: center;
-    width: 100%;
-}
-.trekking .trekking-cos h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    outline: 2px solid salmon;
 }
 
 .trekking-cos .cos {
@@ -226,16 +215,20 @@ section.trekking .trekking-cos {
 
 .trekking-cos .cos img {
     display: block;
+    width: 100%;
     height: 100%;
 }
 
 .trekking-cos .cos .cos-des {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     position: absolute;
     left: 50%;
     bottom: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    transform: translateX(-50%);  
 }
+
 .trekking-cos .cos .cos-des h3 {
     margin-bottom: 6px;
     font-weight: 700;
@@ -250,7 +243,7 @@ section.trekking .trekking-cos {
     transform: scale(0);
     transition: all 0.5s;
 }
-.trekking-wrap .trekking-cos .cos:hover p {
+.trekking-cos .cos:hover p {
     transform: scale(1);
 }
 
@@ -265,7 +258,11 @@ section.location h2 {
     margin-bottom: 40px;
 }
 
-section.location a img {
+section.location iframe {
+    width: 1280px;
+    height: 300px;
+    margin: 0 auto;
+    border: none;
     margin-bottom: 50px;
 }
 
