@@ -216,7 +216,6 @@ section.trekking .trekking-cos {
 .trekking-cos .cos img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 
 .trekking-cos .cos .cos-des {
@@ -250,7 +249,7 @@ section.trekking .trekking-cos {
 /* *location *********************************/
 
 section.location {
-    padding-top: 150px;
+    padding-top: 200px;
 }
 section.location h2 {
     font-size: 32px;
