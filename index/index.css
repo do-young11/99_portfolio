@@ -212,11 +212,24 @@ section.trekking .trekking-cos {
     width: 33.33%;
     position: relative;
 }
+.trekking-cos .cos::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .trekking-cos .cos img {
     display: block;
     width: 100%;
+
+    outline: 2px solid salmon;
 }
+
 
 .trekking-cos .cos .cos-des {
     width: 100%;
@@ -226,6 +239,7 @@ section.trekking .trekking-cos {
     left: 50%;
     bottom: 50%;
     transform: translateX(-50%);  
+    z-index: 1;
 }
 
 .trekking-cos .cos .cos-des h3 {
@@ -242,6 +256,7 @@ section.trekking .trekking-cos {
     transform: scale(0);
     transition: all 0.5s;
 }
+
 .trekking-cos .cos:hover p {
     transform: scale(1);
 }
