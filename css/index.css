@@ -1,72 +1,21 @@
 @charset "utf-8";
 
-/* ***common.css************************************************* */
-.clear::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.inner {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-body {
-    font-family: "Noto Sans KR", sans-serif;
-    color: #3E3E3B;
-}
-
 /* ****font************************************************ */
 /* 
+한글
 font-family: "Noto Sans KR", sans-serif;
 font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
 */
+
+/* **한페이지 구현******************************** */
 html,
 body {
     width: 100%;
     height: 100%;
-}
-
-
-
-/* headr************************************************* */
-header {
-    width: 100%;
-    height: 120px;
-    background-color: rgba(0, 0, 0, 0.2);
-    line-height: 120px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-}
-
-header h1 {
-    float: left;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-header h1 a {
-    color: #F5F5F2;
-}
-
-header .gnb {
-    float: right;
-}
-
-header .gnb ul li {
-    margin-right: 20px;
-}
-
-header .gnb ul li a {
-    font-size: 18px;
-    color: #F5F5F2;
-}
-
-header .gnb ul li a:hover {
-    text-decoration: underline;
 }
 
 /* section******************************************** */
@@ -78,7 +27,7 @@ section {
 
 /* intro******************************* */
 section.intro {
-    background: url(img/main.jpg) no-repeat;
+    background: url(../img/main.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -103,38 +52,32 @@ section.intro .intro-con {
 /* report************************ */
 section.report {
     background-color: #F5F5F2;
-    padding-top: 160px;
+    position: relative;
 }
 .report .report-box {
-    width: 1280px;
-    margin: 0 auto;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    line-height: 1.6rem;
-    position: relative;
 }
 .report-box .report-img {
     width: 50%;
+    float: left;
 }
 .report-box .report-des {
     width: 50%;
+    float: right;
     position: absolute;
     top: 50%;
+    right: 0;
     transform: translateY(-50%);
 }
 .report-box .report-des p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    line-height: 2.5rem;
+    font-size: 22px;
+    color: #6C7A6D;
 }
-.box1 .report-img {
-    float: left;
-}
-.box1 .report-des {
-    right: 0;
-}
-.box2 .report-img {
-    float: right;
-}
+
 .report .report-box .report-img img {
     width: 100%;
     display: block;
@@ -143,7 +86,7 @@ section.report {
 /* *amenitie*************************************** */
 
 section.amenitie {
-    background: url(img/calmomentree1.jpg) no-repeat;
+    background: url(../img/calmomentree1.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -200,8 +143,6 @@ section.trekking .trekking-cos {
 .trekking-cos .cos img {
     display: block;
     width: 100%;
-
-    outline: 2px solid salmon;
 }
 
 
@@ -298,49 +239,3 @@ section.location iframe {
     width: 50%;
 }
 
-/* *footer******************************* */
-footer {
-    background-color: #3E3E3B;
-    padding: 40px 0;
-}
-
-footer .foot-link {
-    border-bottom: 1px solid #F5F5F2;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    height: 60px;
-    line-height: 60px;
-}
-
-footer .foot-link ul {
-    float: left;
-}
-
-footer .foot-link ul li {
-    margin-right: 10px;
-}
-
-footer .foot-link ul li a {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-footer .foot-link ul li a:hover {
-    color: #6C7A6D;
-}
-
-footer .foot-link .sns {
-    float: right;
-}
-
-footer .foot-link .sns a {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-footer .foot-des {
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-}
-
-footer .foot-des p {
-    margin-bottom: 18px;
-}

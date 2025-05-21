@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* ***common.css************************************************* */
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #3E3E3B;
+}
