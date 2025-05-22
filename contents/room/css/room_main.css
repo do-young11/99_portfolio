@@ -11,6 +11,60 @@ font-family: "Lato", sans-serif;
 font-weight: 100|300|400|700;
 */
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 section {
-    background-image: url();
+    background: url(../img/room-main.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+section .wrap {
+    width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 1;
+}
+
+section .des {
+    color: #F5F5F2;
+    float: left;
+}
+section .des h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+section .des p {
+    font-size: 20px;
+    line-height: 2.4rem;
+}
+section .type {
+    float: right;
+}
+section .type a {
+    color: #F5F5F2;
+    font-size: 32px;
+    display: block;
+    margin-bottom: 18px;
+}
+section .type a:hover {
+    text-decoration: underline;
 }
