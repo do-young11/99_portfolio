@@ -113,13 +113,13 @@ section.amenitie .amenitie-des {
     transform: translateY(-50%);
 }
 .amenitie-des h2 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 60px;
 }
 
 .amenitie-des p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6rem;
     margin-bottom: 30px;
     font-weight: 500;
@@ -127,6 +127,9 @@ section.amenitie .amenitie-des {
 }
 
 /* *trekking*************************************************/
+section.trekking {
+    overflow: hidden;
+}
 section.trekking .trekking-cos {
     text-align: center;
 }
@@ -154,8 +157,6 @@ section.trekking .trekking-cos {
 
 .trekking-cos .cos .cos-des {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -165,10 +166,9 @@ section.trekking .trekking-cos {
 }
 
 .trekking-cos .cos .cos-des h2 {
-    margin-bottom: 24px;
+    padding-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
-    
 }
 
 .trekking-cos .cos .cos-des p {
@@ -185,8 +185,9 @@ section.trekking .trekking-cos {
 /* *location *********************************/
 
 section.location {
-    padding-top: 200px;
+    padding-top: 180px;
     box-sizing: border-box;
+    background-color: #F5F5F2;
 }
 .location article {
     width: 1280px;
@@ -196,14 +197,14 @@ section.location {
 section.location .map h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     color: #6C7A6D;
 }
 section.location .map h2 span {
     font-size: 20px;
     color: #999;
     font-weight: 400;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 section.location iframe {
@@ -211,7 +212,7 @@ section.location iframe {
     height: 400px;
     margin: 0 auto;
     border: none;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .location-des .addres {
@@ -240,6 +241,7 @@ section.location iframe {
     border-radius: 10px;
     padding: 6px 12px;
     margin: 0 10px;
+    font-size: 18px;
 }
 
 .location-des .traffic a:hover {

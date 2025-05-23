@@ -46,11 +46,13 @@ section .wrap {
 
 section .des {
     color: #F5F5F2;
+    opacity: 0.9;
     float: left;
 }
 section .des h2 {
     font-size: 48px;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 section .des p {
     font-size: 20px;
@@ -63,7 +65,7 @@ section .type a {
     color: #F5F5F2;
     font-size: 32px;
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 section .type a:hover {
     text-decoration: underline;
