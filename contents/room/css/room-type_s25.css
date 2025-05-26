@@ -101,14 +101,15 @@ section.room-type_s25 article {
 }
 
 .des-wrap .reservation a {
+    font-size: 18px;
     border: 2px solid #f5f5f2;
     border-radius: 10px;
     color: #f5f5f2;
     padding: 8px 32px;
 }
 .des-wrap .reservation a:hover {
-    color: #f5f5f2;
-    background-color: #6C7A6D;
+    background-color: #8D7461;
+    text-decoration: underline;
 }
 
 section.room-type_s25 .room-info {

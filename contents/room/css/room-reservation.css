@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ****font************************************************ */
+/* 
+한글
+font-family: "Noto Sans KR", sans-serif;
+font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
+*/
+
+section {
+    padding: 180px 0 120px;
+    background: url(../img/room-reser.jpg) no-repeat top left;
+    background-color: #B5C1BA;
+}
+section .reservation {
+    float: right;
+    width: 600px;
+    height: 500px;
+    background-color: #F5F5F2;
+    border-radius: 10px;
+    padding: 50px 20px;
+    outline: 2px solid slateblue;
+}
+
+.reservation fieldset {
+    border: none;
+}
+.reservation fieldset legend {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.reservation fieldset label {
+    font-size: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.reservation fieldset input {
+    border: none;
+    padding: 10px 8px;
+    border-radius: 10px;
+    margin: 0 40px 30px 0;
+}

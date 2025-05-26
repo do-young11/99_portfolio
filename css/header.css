@@ -10,10 +10,17 @@ header {
     top: 0;
     z-index: 9999;
 }
+header .inner {
+    height: 100%;
+}
+header .logo a img {
+    height: 80px;
+    display: block;
+    margin-top: 30px;
+}
 
 header h1 {
     float: left;
-    margin-top: 20px;
 }
 
 header .gnb {
@@ -21,8 +28,8 @@ header .gnb {
     line-height: 120px;
 }
 
-header .gnb ul li {
-    margin-right: 20px;
+header .gnb ul li~li {
+    margin-left: 20px;
 }
 
 header .gnb ul li a {
