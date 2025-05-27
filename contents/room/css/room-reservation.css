@@ -16,6 +16,10 @@ section {
     background: url(../img/room-reser.jpg) no-repeat top left;
     background-color: #B5C1BA;
 }
+section .content {
+    width: 1280px;
+    margin: 0 auto;
+}
 section .reservation {
     float: right;
     width: 600px;
