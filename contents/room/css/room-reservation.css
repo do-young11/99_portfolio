@@ -23,24 +23,41 @@ section .reservation {
     background-color: #F5F5F2;
     border-radius: 10px;
     padding: 50px 20px;
-    outline: 2px solid slateblue;
 }
-
-.reservation fieldset {
-    border: none;
-}
-.reservation fieldset legend {
+section .reservation legend {
     font-size: 40px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
-.reservation fieldset label {
+.reservation table {
+    width: 100%;
+}
+.reservation table tr {
+    text-align: left;
+}
+.reservation table tr th {
     font-size: 20px;
-    margin-right: 10px;
-    display: inline-block;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
-.reservation fieldset input {
-    border: none;
-    padding: 10px 8px;
+.reservation table tr td {
+    padding-right: 30px;
+}
+.reservation table tr td input {
+    padding: 10px;
     border-radius: 10px;
-    margin: 0 40px 30px 0;
+    border: 1px solid #6C7A6D;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.reservation input[type=submit] {
+    padding: 6px 40px;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #6C7A6D;
+    color: #6C7A6D;
+    background-color: transparent;
+    margin: 20px 0 0 70%;
+    font-size: 20px;
+    font-weight: 500;
 }

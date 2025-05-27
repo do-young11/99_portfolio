@@ -35,8 +35,7 @@ section::after {
     top: 0;
 }
 section .wrap {
-    width: 1280px;
-    margin: 0 auto;
+    width: calc(100% - 300px);
     position: absolute;
     top: 50%;
     left: 50%;

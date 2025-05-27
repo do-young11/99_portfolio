@@ -51,28 +51,39 @@
         </div>
     </header>
 
-    <section class="clear">
-        <div class="inner">
+    <section>
+        <div class="inner clear">
             <div class="reservation">
                 <form action="#">
-                    <fieldset>
-                        <legend>예약하기</legend>
+                        <legend>예약정보</legend>
 
-                        <label for="userid">이름</label>
-                        <input type="text" name="userid" id="userid" placeholder="name">
+                        <table>
+                            <tr>
+                                <th><label for="userid">이름</label></th>
+                                <th><label for="usertel">전화번호</label></th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="userid" id="userid" placeholder="name"></td>
+                                <td><input type="tel" name="usertel" id="usertel" placeholder="010-0000-0000"></td>
+                            </tr>
 
-                        <label for="usertel">전화번호</label>
-                        <input type="tel" name="usertel" id="usertel">
+                            <tr>
+                                <th><label for="useremail">이메일</label></th>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="useremail" id="useremail" placeholder="example@naver.com">
+                                </td>
+                            </tr>
 
-                        <label for="useremail">이메일</label>
-                        <input type="email" name="useremail" id="useremail">
-
-                        <label for="f-date">체크인</label>
-                        <input type="date" name="f-date" id="f-data">
-
-                        <label for="l-date">체크아웃</label>
-                        <input type="date" name="l-date" id="l-date">
-                    </fieldset>
+                            <tr>
+                                <th><label for="f-date">체크인</label></th>
+                                <th><label for="l-date">체크아웃</label></th>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="f-date" id="f-data"></td>
+                                <td><input type="date" name="l-date" id="l-date"></td>
+                            </tr>
+                        </table>
 
                     <input type="submit" value="예약하기">
                 </form>

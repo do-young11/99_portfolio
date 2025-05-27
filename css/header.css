@@ -25,15 +25,16 @@ header h1 {
 
 header .gnb {
     float: right;
-    line-height: 120px;
 }
 
 header .gnb ul li~li {
     margin-left: 20px;
+    line-height: 120px;
 }
 
 header .gnb ul li a {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     color: #3E3E3B;
 }
 

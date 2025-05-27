@@ -8,8 +8,7 @@
 }
 
 .inner {
-    width: 100%;
-    max-width: 1440px;
+    width:calc(100% - 300px);
     margin: 0 auto;
 }
 
