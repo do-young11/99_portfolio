@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* ****font************************************************ */
+/* 
+한글
+font-family: "Noto Sans KR", sans-serif;
+font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #F5F5F2;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    padding-top: 180px;
+    box-sizing: border-box;
+    outline: 2px solid salmon;
+}
+
+/* spa-main ************************************ */
+.spa-main {
+    background-image: url(../img/mains.jpg),url(../img/mainbig.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 35%, 80%;
+    position: relative;
+}
+.spa-main .main-des {
+    padding: 0 0 300px 200px;
+}
+.spa-main .main-des h2.txt-en {
+    font-size: 96px;
+    color: #7E6A58;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    transform: translateX(10%);
+    letter-spacing: 4px;
+}
+.spa-main .main-des .des {
+
+}
+.spa-main .main-des .des h2.txt-ko {
+    font-size: 40px;
+    color: #6C7A6D;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.spa-main .main-des .des p {
+    font-size: 20px;
+}
