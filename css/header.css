@@ -16,13 +16,11 @@ header .inner {
 header h1.logo {
     float: left;
 }
-header .logo a {
+header .logo a img {
     height: 80px;
     display: block;
     margin-top: 30px;
 }
-
-
 
 header .gnb {
     float: right;

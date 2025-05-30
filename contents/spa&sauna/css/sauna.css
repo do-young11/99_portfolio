@@ -24,17 +24,17 @@ section {
     height: 100%;
     padding-top: 180px;
     box-sizing: border-box;
-    overflow: hidden; /* 스크롤 구현 */
+    /* overflow: hidden; */ /* 스크롤 구현 */
 }
 
 /* spa-main ************************************ */
-.spa-main {
-    background-image: url(../img/mains.jpg),url(../img/mainbig.jpg);
+.sauna-main {
+    background-image: url(../img/sauna-mainsmall.jpg),url(../img/sauna-mainbig.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 46% 46%, 90% 76%;
+    background-position: 46% 46%, 90% 78%;
     position: relative;
 }
-.spa-main .main-des h2.txt-en {
+.sauna-main .main-des h2.txt-en {
     font-size: 96px;
     color: #7E6A58;
     font-family: "Lato", sans-serif;
@@ -42,54 +42,54 @@ section {
     transform: translateX(10%);
     letter-spacing: 2px;
 }
-.spa-main .main-des .des {
+.sauna-main .main-des .des {
     position: absolute;
     left: 20%;
     bottom: 18%;
 }
-.spa-main .main-des .des h2.txt-ko {
+.sauna-main .main-des .des h2.txt-ko {
     font-size: 40px;
     color: #6C7A6D;
     font-weight: 500;
     margin-bottom: 30px;
 }
-.spa-main .main-des .des p {
+.sauna-main .main-des .des p {
     font-size: 20px;
 }
 
 
 /* spa-list****************************************************** */
-.spa-list {
+.sauna-list {
     position: relative;
 }
-.spa-list .wrap-box {
+.sauna-list .wrap-box {
     width: 100%;
-    position: absolute;
-    right: -90%;
+    /* position: absolute;
+    right: -90%; */
 }
-.spa-list .spa-box  {
+.sauna-list .sauna-box  {
     width: 23.5%;
     float: left;
     margin-top: 80px;
 }
-.spa-list .spa-box~.spa-box {
+.sauna-list .sauna-box~.sauna-box {
     margin-left: 2%;
 }
-.spa-list .spa-box img {
+.sauna-list .sauna-box img {
     width: 100%;
     margin-bottom: 40px;
 }
-.spa-list .spa-box .spa-des  {
+.sauna-list .sauna-box .sauna-des  {
     padding: 0 10px;
     word-break: keep-all;
 }
-.spa-list .spa-box .spa-des h3 {
+.sauna-list .sauna-box .sauna-des h3 {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
     color: #6C7A6D;
 }
-.spa-list .spa-box .spa-des p {
+.sauna-list .sauna-box .sauna-des p {
     font-size: 18px;
     font-weight: 300;
 }

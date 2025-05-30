@@ -35,6 +35,7 @@ footer .foot-link .sns {
 }
 
 footer .foot-link .sns a {
+    display: inline-block;
     color: rgba(255, 255, 255, 0.8);
 }
 

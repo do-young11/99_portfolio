@@ -50,12 +50,14 @@ section .des {
 }
 section .des h2 {
     font-size: 60px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: 700;
+    border-bottom: 1px solid #F5F5F2;
 }
 section .des p {
-    font-size: 30px;
-    line-height: 2.4rem;
+    font-size: 26px;
+    font-weight: 400;
 }
 section .type {
     float: right;
