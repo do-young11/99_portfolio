@@ -24,7 +24,7 @@ section {
     height: 100%;
     padding-top: 180px;
     box-sizing: border-box;
-    /* overflow: hidden; */ /* 스크롤 구현 */
+    overflow: hidden; /* 스크롤 구현 */
 }
 
 /* spa-main ************************************ */
@@ -64,8 +64,8 @@ section {
 }
 .sauna-list .wrap-box {
     width: 100%;
-    /* position: absolute;
-    right: -90%; */
+    position: absolute;
+    right: -90%;
 }
 .sauna-list .sauna-box  {
     width: 23.5%;

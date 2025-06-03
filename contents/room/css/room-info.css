@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* ****font************************************************ */
+/* 
+한글
+font-family: "Noto Sans KR", sans-serif;
+font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
+*/
+
+section.banner {
+    width: 100%;
+    /* height: 700px; */
+}
+
+.banner .banner-box {
+    position: relative;
+}
+.banner .banner-box img {
+    width: 100%;
+    display: block;
+}
+.banner .banner-box h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F5F5F2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+/* info-box******************************************** */
+section.room-info {
+    width: 100%;
+    background-color: #F5F5F2;
+    padding: 100px 0 120px;
+}
+.room-info .info-wrap {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+}
+.room-info .info-wrap ul {
+    width: 100%;
+}
+.room-info .info-wrap ul .info-box {
+    border: 1px solid #B5C1BA;
+    border-radius: 10px;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+/* click 활성화************************************************ */
+.room-info .info-wrap ul .active{
+    border: 2px solid #6C7A6D;
+}
+.room-info .info-wrap ul .active .answer {
+    display: block;
+}
+/* ********************************************************** */
+ul .info-box h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+ul .info-box .answer {
+    font-size: 18px;
+    font-weight: 400;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: none;
+}
+ul .info-box .answer p {
+    margin-bottom: 8px;
+}
