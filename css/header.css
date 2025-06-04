@@ -25,6 +25,9 @@ header .logo a img {
 header .gnb {
     float: right;
 }
+header .gnb ul li {
+    position: relative;
+}
 
 header .gnb ul li~li {
     margin-left: 20px;
@@ -35,8 +38,16 @@ header .gnb ul li a {
     font-size: 20px;
     font-weight: 500;
     color: #3E3E3B;
+
 }
 
 header .gnb ul li a:hover {
     text-decoration: underline;
+}
+
+header .gnb .sub-menu li {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10%;
 }

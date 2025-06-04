@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* ****font************************************************ */
+/* 
+한글
+font-family: "Noto Sans KR", sans-serif;
+font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
+*/
+
+section .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 180px;
+    box-sizing: border-box;
+}
+section .container .title {
+    text-align: center;
+}
+section .container .title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section .container .title p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.list-box {
+    width: 100%;
+}.list-box ul {
+    display: block;
+}
+.list-box ul .list  {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.list-box ul .list a img {
+    width: 100%;
+}
+.list-box ul .list .list-des {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: rgba(255,255,255,0.9);
+    padding: 16px;
+}
+.list-box ul .list .list-des h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.list-box ul .list .list-des p {
+    font-size: 18px;
+    font-weight: 400;
+}

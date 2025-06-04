@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -27,34 +30,34 @@
                 <ul>
                     <li>
                         <a href="contents/room/room_main.html">쉼, 공간</a>
-                        <!-- <ul>
-                            <li>객실</li>
-                            <li>이용안내</li>
-                        </ul> -->
+                        <ul class="sub-menu">
+                            <li><a href="contents/room/room-type_s25.html">객실</a></li>
+                            <li><a href="contents/room/room-info.html">이용안내</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">쉼, 온도</a>
-                        <!-- <ul>
+                        <ul class="sub-menu">
                             <li><a href="#">스파</a></li>
                             <li><a href="#">찜질</a></li>
-                        </ul> -->
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">포레스트에서의 하루</a>
+                        <a href="contents/program/program.html">포레스트에서의 하루</a>
                     </li>
                     <li>
                         <a href="#">포레스트 라운지</a>
-                        <!-- <ul>
-                            <li>식당</li>
-                            <li>편의시설</li>
-                        </ul> -->
+                        <ul class="sub-menu">
+                            <li><a href="contents/restaurant/restaurant.html">식당</a></li>
+                            <li><a href="contents/convenience/convenience.html">편의시설</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="intro">
+    <section class="intro page">
         <article class="intro-con">
             <h2>고요한 숲 속의 울림 비로소 온전한 쉼</h2>
 
@@ -79,7 +82,7 @@
         </article>
     </section>
 
-    <section class="report">
+    <section class="report page">
         <article class="report-box clear">
             <div class="report-img">
                 <img src="img/report1-1.jpg" alt="산속에 위치한 포레스트 건물">
@@ -100,7 +103,7 @@
         </article>
     </section>
 
-    <section class="report">
+    <section class="report page">
         <article class="report-box clear">
             <div class="report-img">
                 <img src="img/report2-1.jpg" alt="산 꼭대기가 보이는 포레스트 건물">
@@ -119,7 +122,7 @@
         </article>
     </section>
 
-    <section class="amenitie ">
+    <section class="amenitie page">
         <article class="amenitie-des">
             <div class="des-box">
                 <h2>리솜 시그니처 향을 담은 저자극 어메니티</h2>
@@ -138,7 +141,7 @@
         </article>
     </section>
 
-    <section class="trekking">
+    <section class="trekking page">
 
         <article class="trekking-cos clear">
 
@@ -172,7 +175,7 @@
         </article>
     </section>
 
-    <section class="location">
+    <section class="location page">
         <article class="map">
             <h2>오시는길<span>충청북도 제천시 백운면 금봉로 365</span></h2>
             <iframe
@@ -201,7 +204,7 @@
     </section>
 
     <footer>
-        <div class="inner">
+        <div class="inner page">
             <div class="foot-link clear">
                 <ul>
                     <li><a href="#">오시는길</a></li>

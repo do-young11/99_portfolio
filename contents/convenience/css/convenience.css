@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* ****font************************************************ */
+/* 
+한글
+font-family: "Noto Sans KR", sans-serif;
+font-weight: 100~900; 
+
+영어
+font-family: "Lato", sans-serif;
+font-weight: 100|300|400|700;
+*/
+section .banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+section .banner img {
+    width: 100%;
+}
+section .banner h2 {
+    font-size: 48px;
+    color: #f5f5f2;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+/* ********************************************************************** */
+section article {
+    /* width: calc(100% - 300px); */
+    width: 1440px;
+    margin: 0 auto;
+}
+
+section article h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-align: center;
+}
+section article .list-box {
+    float: left;
+    width: 32%;
+    margin-bottom: 40px;
+}
+section article .list-box~.list-box {
+    margin-left: 2%;
+}
+section article .list-box:nth-child(5) {
+    margin-left: 0;
+}
+section article .list-box > img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+section article .list-box .list-des {
+    padding: 0 10px;
+}
+section article .list-box .list-des h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+section article .list-box .list-des p {
+    font-size: 18px;
+    margin-bottom: 18px;
+
+}
+section article .list-box .list-des p img {
+    display: inline-block;
+    margin-right: 12px;
+}
+section article .list-box .list-des p, .list-des p img {
+    vertical-align: bottom;
+}
+section .convenience-spa {
+    margin-bottom: 60px;
+}
+section .convenience-sauna {
+    margin-bottom: 120px;
+}

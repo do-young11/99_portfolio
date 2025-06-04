@@ -226,6 +226,7 @@ section.location iframe {
 
 .location-des .traffic img {
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .location-des .traffic p {
