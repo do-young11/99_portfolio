@@ -3,7 +3,7 @@
 /* *footer******************************* */
 footer {
     background-color: #3E3E3B;
-    padding: 40px 0;
+    padding: 40px 0 60px;
 }
 
 footer .foot-link {
@@ -36,7 +36,6 @@ footer .foot-link .sns {
 
 footer .foot-link .sns a {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.8);
 }
 
 footer .foot-des {
