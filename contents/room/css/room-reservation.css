@@ -54,6 +54,7 @@ section .reservation legend {
     border: 1px solid #6C7A6D;
     margin-bottom: 30px;
     width: 100%;
+    color: #999;
 }
 .reservation input[type=submit] {
     padding: 6px 40px;

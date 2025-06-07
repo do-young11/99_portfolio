@@ -11,18 +11,24 @@ font-family: "Lato", sans-serif;
 font-weight: 100|300|400|700;
 */
 
+
 section.banner {
     width: 100%;
-    /* height: 700px; */
 }
 
 .banner .banner-box {
     position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    outline: 2px solid slateblue;
 }
+
 .banner .banner-box img {
     width: 100%;
     display: block;
 }
+
 .banner .banner-box h2 {
     font-size: 48px;
     font-weight: 800;
@@ -39,13 +45,16 @@ section.room-info {
     background-color: #F5F5F2;
     padding: 100px 0 120px;
 }
+
 .room-info .info-wrap {
     width: calc(100% - 300px);
     margin: 0 auto;
 }
+
 .room-info .info-wrap ul {
     width: 100%;
 }
+
 .room-info .info-wrap ul .info-box {
     border: 1px solid #B5C1BA;
     border-radius: 10px;
@@ -54,26 +63,54 @@ section.room-info {
     margin-bottom: 60px;
 }
 
-/* click 활성화************************************************ */
-.room-info .info-wrap ul .active{
-    border: 2px solid #6C7A6D;
-}
-.room-info .info-wrap ul .active .answer {
-    display: block;
-}
+
 /* ********************************************************** */
-ul .info-box h3 {
+.info-box .info-box-title {
+    position: relative;
+
+}
+.info-box h3 {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 20px;
+    float: left;
+    /* background-image: url(../img/down_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right; */
 }
-ul .info-box .answer {
+
+.info-box img {
+    float: right;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.info-box .answer {
     font-size: 18px;
     font-weight: 400;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+    margin-top: 30px;
     display: none;
 }
-ul .info-box .answer p {
+
+.info-box .answer p {
     margin-bottom: 8px;
+}
+
+/* click 활성화************************************************ */
+.room-info .info-wrap ul .active {
+    border: 2px solid #6C7A6D;
+}
+
+/* .room-info .info-wrap ul .active h3 {
+    background-image: url(../img/up_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: right;
+} */
+.room-info .info-wrap ul .active .answer {
+    display: block;
 }

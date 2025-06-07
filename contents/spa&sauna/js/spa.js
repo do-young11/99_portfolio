@@ -1,9 +1,3 @@
-//index.js
-
-// alert('연결');
-
-//한페이지 구현
-
 var pageCount = 0;
 var total;
 
@@ -11,16 +5,14 @@ var total;
 var stat = 0;
 
 $(function () {
-    $('.font h2').hide();
-    $('.font p').hide();
-    fade();
-    //mousewheel////////////////////////////////////////////////////////////////////////////////////
+    logo();
+
     total = $('.page').length;
     console.log(total);
 
     $(document).on('mousewheel DOMMouseScroll', function () {
 
-        
+
         if (stat === 1) return false;
         stat = 1;
 
@@ -50,12 +42,6 @@ $(function () {
         }, 800, function () {
             stat = 0;
         });
-        
-    });//mousewheel
 
+    });
 });
-
-function fade (){
-    $('.font h2').fadeIn(800);
-    $('.font p').delay(800).fadeIn(800);
-};
