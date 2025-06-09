@@ -16,9 +16,10 @@ $(function () {
                 src: 'img/down_arrow.png',
                 alt: '클릭하면 내용이 나오는걸 알려주는 아랫방향 화살표 아이콘'
             });
-            $(this).parent().siblings().find('.answer').slideUp();
+            $(this).parent().siblings().find('.answer').slideUp(400);
 
         });
+
         $(this).addClass('active');
 
         //펼쳐진 answer 화살표 방향 바꾸기
