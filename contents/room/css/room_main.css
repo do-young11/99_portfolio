@@ -61,10 +61,12 @@ section .des p {
 }
 section .type {
     float: right;
+    margin-right: 40px;
 }
 section .type a {
     color: #F5F5F2;
     font-size: 32px;
+    font-weight: 600;
     display: block;
     margin-bottom: 22px;
 }

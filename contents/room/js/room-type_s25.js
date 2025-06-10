@@ -9,7 +9,7 @@ $(function () {
     setInterval(function(){
         $('.banner ul').animate({
             marginLeft: -liW
-        }, 3000,function(){
+        },2000,function(){
             $('.banner ul li:first').appendTo('.banner ul');
             $('.banner ul').css({
                 marginLeft:0

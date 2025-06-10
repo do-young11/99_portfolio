@@ -11,16 +11,13 @@ var total;
 var stat = 0;
 
 $(function () {
-    $('.font h2').hide();
-    $('.font p').hide();
+
     fade();
     //mousewheel////////////////////////////////////////////////////////////////////////////////////
     total = $('.page').length;
     console.log(total);
 
     $(document).on('mousewheel DOMMouseScroll', function () {
-
-        
         if (stat === 1) return false;
         stat = 1;
 
@@ -45,17 +42,21 @@ $(function () {
         var pageH = $('.page').eq(pageCount).offset().top;
         console.log('페이지 길이' + pageH);
 
+        $('.font h2, .font p').hide();
+
         $('html, body').animate({
             scrollTop: pageH + 'px'
         }, 800, function () {
             stat = 0;
+            logo();
         });
         
+        fade();
     });//mousewheel
-
 });
 
-function fade (){
+function fade() {
+    $('.intro h2, .intro p').hide();
     $('.font h2').fadeIn(800);
-    $('.font p').delay(800).fadeIn(800);
+    $('.font p').delay(1000).fadeIn(800);
 };

@@ -16,13 +16,17 @@ section {
     background: url(../img/room-reser.jpg) no-repeat top left;
     background-color: #B5C1BA;
     background-size: 1400px;
+    height: 600px;
 }
 section .content {
-    width: 1280px;
+    width: calc(100% - 300px);
     margin: 0 auto;
+    position: relative;
 }
 section .reservation {
-    float: right;
+    position: absolute;
+    right: 10%;
+    top: 0;
     width: 600px;
     height: 500px;
     background-color: #F5F5F2;

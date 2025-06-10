@@ -73,7 +73,6 @@ section {
     width: 100%;
     position: absolute;
     right: -50%;
-    outline: 2px solid blue;
 }
 .spa-list .spa-box  {
     width: 23.5%;

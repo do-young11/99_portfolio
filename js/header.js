@@ -1,14 +1,10 @@
 //header.js
 
-
+//menuslide
 $(function(){
-    //menu slide
-    $('.gnb ul li a').hover(
-        function () {
-            $('.sub-menu').stop(true).slideDown(800,'linear');
-        },
-        function () {
-            $('.sub-menu').slideUp(500,'linear');
-        }
-    );
+    $('.gnb>ul>li').mouseenter(function(){
+        $('.sub-menu').slideDown('linear');
+    }).mouseleave(function(){
+        $('.sub-menu').slideUp('linear');
+    });
 });

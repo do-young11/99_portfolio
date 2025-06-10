@@ -15,25 +15,26 @@ header .inner {
 }
 header h1.logo {
     float: left;
+    padding-left: 20px;
 }
 header .logo a img {
     height: 80px;
     display: block;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 header .gnb {
     float: right;
 }
-header .gnb ul li {
+header .gnb > ul > li {
     position: relative;
 }
 
-header .gnb ul li~li {
+header .gnb > ul > li~li {
     margin-left: 20px;
 }
 
-header .gnb ul li a {
+header .gnb > ul > li > a {
     line-height: 120px;
     font-size: 18px;
     font-weight: 600;
@@ -41,7 +42,7 @@ header .gnb ul li a {
     color: #f5f5f2;
 }
 
-header .gnb ul li a:hover {
+header .gnb > ul > li > a:hover {
     text-decoration: underline;
 }
 
@@ -50,10 +51,9 @@ header .gnb ul li a:hover {
 header .gnb .sub-menu {
     position: absolute;
     left: 50%;
-    top: 90px;
+    top: 120px;
     transform: translateX(-50%);
     width: 100%;
-    line-height: normal;
     display: none;
 }
 header .gnb .sub-menu li {
@@ -66,7 +66,6 @@ header .gnb .sub-menu li a {
     font-size: 18px;
     display: block;
     width: 100%;
-    padding: 0;
     font-weight: 500;
     line-height: 2;
 }
