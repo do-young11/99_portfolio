@@ -8,15 +8,15 @@ $(function () {
     $('.info-box').click(function () {
 
         //클릭하면 answer 나오고 active 적용
-        $('>.answer', this).slideDown(500, 'linear', function () {
+        $('>.answer', this).slideToggle('linear', function () {
 
             //다른 .answer 닫기
-            $(this).parent().siblings().removeClass('active');
-            $(this).parent().siblings().find('img').attr({
+            $(this).parent().siblings().removeClass('active').find('img').attr({
                 src: 'img/down_arrow.png',
                 alt: '클릭하면 내용이 나오는걸 알려주는 아랫방향 화살표 아이콘'
             });
-            $(this).parent().siblings().find('.answer').slideUp(400);
+            
+            $(this).parent().siblings().find('.answer').slideUp();
 
         });
 

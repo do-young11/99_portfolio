@@ -3,8 +3,8 @@
 //menuslide
 $(function(){
     $('.gnb>ul>li').mouseenter(function(){
-        $('.sub-menu').slideDown('linear');
+        $('.sub-menu').stop().slideDown('linear');
     }).mouseleave(function(){
-        $('.sub-menu').slideUp('linear');
+        $('.sub-menu').stop().slideUp('linear');
     });
 });

@@ -10,15 +10,23 @@ font-weight: 100~900;
 font-family: "Lato", sans-serif;
 font-weight: 100|300|400|700;
 */
-section .banner {
+
+/* ********************************************************************** */
+section article {
     width: 100%;
-    height: 600px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section article.banner {
+    max-width: none;
+    height: 550px;
     position: relative;
     overflow: hidden;
     margin-bottom: 100px;
 }
 section .banner img {
     width: 100%;
+    object-fit: cover;
 }
 section .banner h2 {
     font-size: 48px;
@@ -30,23 +38,19 @@ section .banner h2 {
     transform: translate(-50%);
 }
 
-/* ********************************************************************** */
-section article {
-    /* width: calc(100% - 300px); */
-    width: 1440px;
-    margin: 0 auto;
-}
-
 section article h3 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 60px;
-    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 section article .list-box {
     float: left;
     width: 32%;
     margin-bottom: 40px;
+    border: 1px solid #B5C1BA;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 section article .list-box~.list-box {
     margin-left: 2%;
@@ -61,6 +65,7 @@ section article .list-box > img {
 
 section article .list-box .list-des {
     padding: 0 10px;
+    word-break: keep-all;
 }
 section article .list-box .list-des h4 {
     font-size: 22px;
