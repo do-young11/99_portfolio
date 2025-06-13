@@ -13,7 +13,7 @@ font-weight: 100|300|400|700;
 
 section {
     padding: 180px 0 120px;
-    background: url(../img/room-reser.jpg) no-repeat top left;
+    background: url(../img/reserbg.jpg) no-repeat top left;
     background-color: #B5C1BA;
     background-size: 1400px;
     height: 600px;
@@ -25,7 +25,7 @@ section .content {
 }
 section .reservation {
     position: absolute;
-    right: 10%;
+    right: 15%;
     top: 0;
     width: 600px;
     height: 500px;

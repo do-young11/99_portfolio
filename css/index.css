@@ -105,7 +105,6 @@ section.amenitie .amenitie-des {
     position: relative;
 }
 .amenitie-des .des-box {
-    display: inline-block;
     color: #F5F5F2;
     position: absolute;
     right: 0;
@@ -123,7 +122,7 @@ section.amenitie .amenitie-des {
     line-height: 1.6rem;
     margin-bottom: 30px;
     font-weight: 500;
-    opacity: 0.9;
+    color: rgba(255,255,255,0.9);
 }
 
 /* *trekking*************************************************/

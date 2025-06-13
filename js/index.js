@@ -52,6 +52,13 @@ $(function () {
         });
         
         fade();
+
+        if(pageCount === 3) {
+            resetAction(); 
+
+            fadeAction();
+        };
+
     });//mousewheel
 });
 
@@ -60,3 +67,17 @@ function fade() {
     $('.font h2').fadeIn(800);
     $('.font p').delay(1000).fadeIn(800);
 };
+
+function resetAction (){
+    $('.des-box h2').css('opacity',0);
+    $('.des-box .txt-box').css('opacity',0);
+}
+function fadeAction (){
+    $('.des-box h2').animate({
+        opacity : 1
+    }, 2000);
+
+    $('.des-box .txt-box').delay(1500).animate({
+        opacity: 1
+    }, 1500);
+}
