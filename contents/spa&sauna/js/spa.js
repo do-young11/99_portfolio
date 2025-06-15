@@ -31,7 +31,6 @@ $(function () {
 
         var evt = window.event;
 
-        //delta값 구하기
         var delta = evt.wheelDelta ? evt.wheelDelta : evt.detail;
         console.log(delta);
 

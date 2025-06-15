@@ -27,6 +27,7 @@ header .gnb {
     float: right;
 }
 header .gnb > ul > li {
+<<<<<<< Updated upstream
     position: relative;
 }
 
@@ -36,10 +37,17 @@ header .gnb > ul > li~li {
 
 header .gnb > ul > li > a {
     line-height: 120px;
+=======
+    margin-top: 50px;
+    position: relative;
+}
+header .gnb > ul > li > a {
+>>>>>>> Stashed changes
     font-size: 18px;
     font-weight: 600;
-    padding: 0 20px;
     color: #f5f5f2;
+    display: block;
+    padding: 0 20px;
 }
 
 header .gnb > ul > li > a:hover {
@@ -48,24 +56,34 @@ header .gnb > ul > li > a:hover {
 
 
 /* sub-menu***************************************************************** */
-header .gnb .sub-menu {
+header .gnb ul li .sub-menu {
     position: absolute;
+<<<<<<< Updated upstream
     left: 50%;
     top: 82px;
     transform: translateX(-50%);
     width: 100%;
+=======
+    top: 70px;
+    width: 100%;
+    height: 50%;
+>>>>>>> Stashed changes
     display: none;
 }
 header .gnb .sub-menu li {
     text-align: center;
-    width: 100%;
-    margin-left: 0;
+    display: block;
+    margin-bottom: 10px;
 }
 header .gnb .sub-menu li a {
     color: #f5f5f2;
     font-size: 18px;
+    font-weight: 400;
     display: block;
+<<<<<<< Updated upstream
     width: 100%;
     font-weight: 500;
     line-height: 2;
+=======
+>>>>>>> Stashed changes
 }
