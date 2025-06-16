@@ -39,15 +39,17 @@ section.intro .intro-con {
 }
 
 .intro-con h2 {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 50px;
 }
 
 .intro-con .txt-box p {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
     opacity: 0.8;
 }
 
@@ -68,7 +70,7 @@ section.report {
     width: 100%;
     display: block;
 }
-.report-box .report-des {
+.report-box .des-box {
     width: 50%;
     float: right;
     position: absolute;
@@ -78,12 +80,12 @@ section.report {
     color: #6C7A6D;
 }
 
-.report-des h2 {
+.des-box h2 {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 80px;
 }
-.report-des p {
+.des-box p {
     line-height: 2.5rem;
     font-size: 28px;
     font-weight: 400;
@@ -137,6 +139,7 @@ section.trekking .trekking-cos {
     float: left;
     width: 33.3%;
     position: relative;
+    overflow: hidden;
 }
 .trekking-cos .cos::after {
     content: "";
@@ -152,6 +155,7 @@ section.trekking .trekking-cos {
 .trekking-cos .cos img {
     display: block;
     width: 100%;
+    transition: all 0.5s;
 }
 
 .trekking-cos .cos .cos-des {
@@ -162,23 +166,32 @@ section.trekking .trekking-cos {
     transform: translateX(-50%);  
     z-index: 1;
     color: rgba(255, 255, 255, 0.9);
+    transition: opacity 0.5s;
 }
 
+/* hover효과 */
+.trekking-cos .cos:hover img {
+    transform: scale(1.2);
+}
+.trekking-cos .cos:hover .cos-des p {
+    opacity: 1;
+}
 .trekking-cos .cos .cos-des h2 {
     padding-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
 }
+.trekking-cos .cos .cos-des h2 span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+}
 
 .trekking-cos .cos .cos-des p {
     font-weight: 400;
-    font-size: 22px;
-    transform: scale(0);
-    transition: all 0.5s;
-}
-
-.trekking-cos .cos:hover p {
-    transform: scale(1);
+    font-size: 20px;
+    opacity: 0;
 }
 
 /* *location *********************************/

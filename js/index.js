@@ -51,10 +51,20 @@ $(function () {
             logo();
             $('.logo a img').attr('src','img/logo.png');
         });
-        
-        fade();
 
-        if(pageCount === 3) {
+        if(pageCount===1){
+            resetAction(); 
+
+            fadeAction();
+        };
+        if(pageCount===2){
+            resetAction(); 
+
+            $('.des-box p').animate({
+                opacity:1
+            },2000);
+        };
+        if(pageCount===3) {
             resetAction(); 
 
             fadeAction();
@@ -65,20 +75,21 @@ $(function () {
 
 function fade() {
     $('.intro h2, .intro p').hide();
-    $('.font h2').fadeIn(800);
-    $('.font p').delay(1000).fadeIn(800);
+    $('.intro h2').fadeIn(800);
+    $('.intro p').delay(1000).fadeIn(800);
 };
 
 function resetAction (){
     $('.des-box h2').css('opacity',0);
-    $('.des-box .txt-box').css('opacity',0);
+    $('.des-box p').css('opacity',0);
+
 }
 function fadeAction (){
     $('.des-box h2').animate({
         opacity : 1
     }, 2000);
 
-    $('.des-box .txt-box').delay(1500).animate({
+    $('.des-box p').delay(1500).animate({
         opacity: 1
     }, 1500);
 }
