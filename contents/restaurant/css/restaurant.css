@@ -37,17 +37,25 @@ section .banner h2 {
     top: 50%;
     transform: translate(-50%);
 }
-
+article.container {
+    position: relative;
+}
 section article h3 {
     font-size: 34px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     margin-bottom: 40px;
 }
-
+.con {
+    width: 100%;
+    overflow-x: hidden;
+}
+.list-wrap {
+    width: 125%;
+}
 .list-wrap .list-box {
     float: left;
-    width: 32%;
+    width: 18.4%;
     margin-bottom: 40px;
     border: 1px solid #B5C1BA;
     padding: 10px;
@@ -56,9 +64,6 @@ section article h3 {
 }
 .list-wrap .list-box~.list-box {
     margin-left: 2%;
-}
-.list-wrap .list-box:nth-child(4) {
-    margin-left: 0;
 }
 .list-wrap .list-box > img {
     width: 100%;
@@ -97,3 +102,18 @@ section article.restaurant a:hover {
 section article.cafe-pub {
     margin-bottom: 120px;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+button img {
+    height: 100%;
+}
+.prev {left: -8%;}
+.next {right: -8%;}
