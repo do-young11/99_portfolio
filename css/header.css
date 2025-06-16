@@ -52,7 +52,7 @@ header .gnb > ul > li > a:hover {
 .sub-menu {
     position: absolute;
     left: 50%;
-    top: 120px;
+    top: 96px;
     transform: translateX(-50%);
     width: 100%;
     display: none;
