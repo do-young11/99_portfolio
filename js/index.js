@@ -48,7 +48,7 @@ $(function () {
             scrollTop: pageH + 'px'
         }, 800, function () {
             stat = 0;
-            $('.logo a img').attr('src','img/logo.png');
+            $('.logo a img').attr('src','../img/logo.png');
         });
         
         fade();
