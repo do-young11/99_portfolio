@@ -39,7 +39,6 @@ section.intro .intro-con {
 }
 
 .intro-con h2 {
-    /* font-size: 40px; */
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -78,6 +77,7 @@ section.report {
     transform: translateY(-20%);
     right: -50px;
     color: #6C7A6D;
+
 }
 
 .des-box h2 {
@@ -116,7 +116,7 @@ section.amenitie .amenitie-des {
 .amenitie-des h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 60px;    
 }
 
 .amenitie-des p {
@@ -152,7 +152,7 @@ section.trekking .trekking-cos {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.trekking-cos .cos img {
+.trekking-cos .cos > img {
     display: block;
     width: 100%;
     transition: all 0.5s;
@@ -169,6 +169,7 @@ section.trekking .trekking-cos {
     transition: opacity 0.5s;
 }
 
+
 /* hover효과 */
 .trekking-cos .cos:hover img {
     transform: scale(1.2);
@@ -181,12 +182,21 @@ section.trekking .trekking-cos {
     font-weight: 700;
     font-size: 36px;
 }
+/* icon */
+.trekking-cos .cos .cos-des img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    opacity: 0.7;
+}
+
 .trekking-cos .cos .cos-des h2 span {
     display: block;
     font-size: 20px;
     font-weight: 400;
     color: rgba(255,255,255,0.7);
 }
+
 
 .trekking-cos .cos .cos-des p {
     font-weight: 400;
@@ -254,7 +264,7 @@ section.location iframe {
     border-radius: 10px;
     padding: 6px 12px;
     margin: 0 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .location-des .traffic a:hover {

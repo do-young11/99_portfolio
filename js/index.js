@@ -53,7 +53,7 @@ $(function () {
         });
 
         if(pageCount===1){
-            resetAction(); 
+            resetAction();
 
             fadeAction();
         };
@@ -89,7 +89,7 @@ function fadeAction (){
         opacity : 1
     }, 2000);
 
-    $('.des-box p').delay(1500).animate({
+    $('.des-box p').delay(1200).animate({
         opacity: 1
     }, 1500);
 }
