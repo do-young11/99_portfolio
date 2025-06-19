@@ -60,9 +60,7 @@ $(function () {
         if(pageCount===2){
             resetAction(); 
 
-            $('.des-box p').animate({
-                opacity:1
-            },2000);
+            fadeAction();
         };
         if(pageCount===3) {
             resetAction(); 
