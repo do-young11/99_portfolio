@@ -5,6 +5,9 @@ function logo (){
     $('.gnb a').css({
         color: '#3E3E3B '
     })
+    $('.sub-menu li a').css({
+        color: '#3E3E3B'
+    })
 };
 
 
