@@ -1,4 +1,4 @@
-//restaurant
+//convenience.js
 
 $(function () {
     var boxW = Math.floor($('.list-box').outerWidth(true));

@@ -51,33 +51,36 @@ section article h3 {
     overflow-x: hidden;
 }
 .list-wrap {
-    width: 125%;
+    width: 200%;
 }
 .list-wrap .list-box {
     float: left;
-    width: 18.4%;
+    width: 11.62%;
     margin-bottom: 40px;
     border: 1px solid #B5C1BA;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
+    height: 600px;
+    margin-right: 1%;
 }
-.list-wrap .list-box~.list-box {
-    margin-left: 2%;
+.list-wrap .list-box:last-child {
+    margin-right:0;
 }
+
 .list-wrap .list-box > img {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .list-wrap .list-box .list-des {
     padding: 0 10px;
-    height: 320px;
 }
 .list-wrap .list-box .list-des h4 {
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height:50px;
 }
 section article .list-box .list-des p {
     font-size: 18px;

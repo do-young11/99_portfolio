@@ -36,8 +36,6 @@ section .container .title p {
     width: 100%;
     overflow: hidden;
     
-}.list-box ul {
-    display: block;
 }
 .list-box ul .list  {
     float: left;
@@ -56,9 +54,10 @@ section .container .title p {
     padding: 16px;
 }
 .list-box ul .list .list-des h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .list-box ul .list .list-des p {
     font-size: 18px;
