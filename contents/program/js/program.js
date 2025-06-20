@@ -6,31 +6,30 @@ $(function () {
 
     //프로그램 list 호버시 크기변경
 
-    var w = $('.list a').width();
-    console.log(w);
+    var w = $('.list-wrap').width();
+    console.log('리스트 '+w);
 
     $('.list').hover(
         function(){
-            $(this).find('img').css({
-                transform: 'scale(1.5)',
-                transition: 'all 0.5s'
+
+            $(this).stop().animate({
+                width: '30%'
+            }).siblings().stop().animate({
+                width: '17.5%'
             });
+
             $('>.list-des h3',this).fadeIn(500).css({
                 fontSize: '2rem',
-                wordBreak: 'keep-all',
                 color:'#fff'
             });
-            $('>.list-des p',this).fadeIn(500).css('text-align','left');
+            $('>.list-des p',this).show(500).css({
+                color:'#fff'
+            });
         },
 
         function(){
-            $(this).find('img').css({
-                transform: 'scale(1)',
-                transition: 'all 0.5s'
-            });
-
-            $('>.list-des',this).css({
-                transform: 'scale(1)'
+            $('.list').css({
+                width: '20%',
             });
 
             $('>.list-des h3',this).fadeIn(500).css({
