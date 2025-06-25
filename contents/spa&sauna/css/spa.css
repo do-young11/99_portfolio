@@ -44,9 +44,9 @@ section {
     bottom: 18%;
 }
 .spa-main .main-des .des h2.txt-ko {
-    font-size: 40px;
+    font-size: 42px;
     color: #6C7A6D;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 .spa-main .main-des .des p {
@@ -62,7 +62,7 @@ section {
 }
 .spa-main .main-des .imgs img:first-child {
     right: 40%;
-    top: 30%;
+    top: 32%;
 }
 
 /* spa-list****************************************************** */
@@ -92,11 +92,11 @@ section {
 }
 .spa-list .spa-box .spa-des h3 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     color: #6C7A6D;
 }
 .spa-list .spa-box .spa-des p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }

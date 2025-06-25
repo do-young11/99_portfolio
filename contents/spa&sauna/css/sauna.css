@@ -27,12 +27,12 @@ section {
     overflow: hidden; /* 스크롤 구현 */
 }
 
-/* spa-main ************************************ */
+/* sauna-main ************************************ */
 .sauna-main {
     background-image: url(../img/sauna-mainsmall.jpg),url(../img/sauna-mainbig.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: 46% 46%, 90% 78%;
-    position: relative;
+    /* position: relative; */
 }
 .sauna-main .main-des h2.txt-en {
     font-size: 96px;
@@ -43,18 +43,20 @@ section {
     letter-spacing: 2px;
 }
 .sauna-main .main-des .des {
-    position: absolute;
+    /* position: absolute;
     left: 20%;
-    bottom: 18%;
+    bottom: 18%; */
+    transform: translate(20%, 200%);
 }
 .sauna-main .main-des .des h2.txt-ko {
     font-size: 40px;
     color: #6C7A6D;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 .sauna-main .main-des .des p {
     font-size: 20px;
+    font-weight: 400;
 }
 
 
@@ -65,7 +67,7 @@ section {
 .sauna-list .wrap-box {
     width: 100%;
     position: absolute;
-    right: -90%;
+    right: -50%;
 }
 .sauna-list .sauna-box  {
     width: 23.5%;
@@ -85,11 +87,11 @@ section {
 }
 .sauna-list .sauna-box .sauna-des h3 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     color: #6C7A6D;
 }
 .sauna-list .sauna-box .sauna-des p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
