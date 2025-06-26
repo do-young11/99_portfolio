@@ -67,6 +67,22 @@ $(function () {
 
             fadeAction();
         };
+        if(pageCount===4) {
+            $('.cos').hover(
+                function(){
+                    $(this).animate({
+                        backgroundSize: '120%'
+                    },500);
+                },
+                function(){
+                    $(this).animate({
+                        backgroundSize: '100%'
+                    },500)
+                }
+            );
+        }else{
+            logo();
+        };
 
     });//mousewheel
 });

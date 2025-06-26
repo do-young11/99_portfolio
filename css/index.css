@@ -16,22 +16,16 @@ html,
 body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* 스크롤바 없애기 */
+    overflow: hidden;
+    /* 스크롤바 없애기 */
 }
 
 /* section******************************************** */
-/* section {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-} */
- .page {
+.page {
     width: 100%;
     height: 100%;
     overflow: hidden;
-
-    outline: 2px solid red;
- }
+}
 
 /* intro******************************* */
 section.intro {
@@ -63,71 +57,49 @@ section.intro .intro-con {
 section.report {
     background-color: #F5F5F2;
     position: relative;
-    /* overflow: hidden; */
 }
 
-/* section.re1 {
-    background: url(../img/report1-1.jpg) no-repeat left/auto 100%;
-} */
-
-
-section.re1 .report-box {
+section .report-box {
     width: 50%;
     height: 100%;
-    background: url(../img/report1-1.jpg) no-repeat left top/cover;
 
     position: relative;
-
-    outline: 2px solid blue;
 }
-section.re1 .report-box .des-box {
-    position: absolute; /* aritcle 기준으로! */
+
+section.re1 .report-box {
+    background: url(../img/report1-1.jpg) no-repeat left top/cover;
+}
+
+section.re2 .report-box {
+    background: url(../img/report2-1.jpg) no-repeat left top/cover;
+}
+
+section .report-box .des-box {
+    position: absolute;
+    /* aritcle 기준으로! */
     width: 100%;
     padding: 0 30px;
     box-sizing: border-box;
     left: 100%;
     top: 50%;
     transform: translateY(-50%);
-    
-
-    outline: 2px solid red;
 }
-
-.report .report-box {
-    font-weight: 400;
-}
-.report-box .report-img {
-    width: 50%;
-    float: left;
-}
-.report-box .report-img img {
-    width: 100%;
-    display: block;
-}
-/* .report-box .des-box {
-    width: 50%;
-    float: right;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-20%);
-    right: -50px;
-    color: #6C7A6D;
-
-} */
 
 .des-box h2 {
     font-size: 36px;
+    color: #6C7A6D;
     font-weight: 600;
     margin-bottom: 60px;
 }
+
 .des-box p {
-    /* line-height: 2.5rem; */
     font-size: 26px;
     font-weight: 400;
-    color: #666;
-    /* margin-bottom: 80px; */
 }
 
+section.re2 .report-box .des-box p {
+    margin-bottom: 20px;
+}
 
 /* *amenitie*************************************** */
 
@@ -142,6 +114,7 @@ section.amenitie .amenitie-des {
     margin: 0 auto;
     position: relative;
 }
+
 .amenitie-des .des-box {
     color: #F5F5F2;
     position: absolute;
@@ -149,10 +122,12 @@ section.amenitie .amenitie-des {
     top: 50%;
     transform: translateY(-50%);
 }
-.amenitie-des h2 {
+
+.amenitie-des .des-box h2 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 60px;    
+    margin-bottom: 60px;
+    color: #F5F5F2;
 }
 
 .amenitie-des p {
@@ -160,23 +135,42 @@ section.amenitie .amenitie-des {
     line-height: 1.6rem;
     margin-bottom: 30px;
     font-weight: 500;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* *trekking*************************************************/
 section.trekking {
     overflow: hidden;
 }
+
 section.trekking .trekking-cos {
     text-align: center;
+    height: 100%;
 }
 
 .trekking-cos .cos {
     float: left;
     width: 33.3%;
+    height: 100%;
     position: relative;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+.trekking-cos .cos-img1 {
+    background-image: url(../img/trekking1.jpg);
+}
+
+.trekking-cos .cos-img2 {
+    background-image: url(../img/trekking2.jpg);
+}
+
+.trekking-cos .cos-img3 {
+    background-image: url(../img/trekking3-1.jpg);
+}
+
 .trekking-cos .cos::after {
     content: "";
     display: block;
@@ -188,36 +182,23 @@ section.trekking .trekking-cos {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.trekking-cos .cos > img {
-    display: block;
-    width: 100%;
-    transition: all 0.5s;
-}
-
 .trekking-cos .cos .cos-des {
     width: 100%;
     position: absolute;
     left: 50%;
     bottom: 50%;
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
     z-index: 1;
     color: rgba(255, 255, 255, 0.9);
     transition: opacity 0.5s;
 }
 
-
-/* hover효과 */
-.trekking-cos .cos:hover img {
-    transform: scale(1.2);
-}
-.trekking-cos .cos:hover .cos-des p {
-    opacity: 1;
-}
 .trekking-cos .cos .cos-des h2 {
     padding-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
 }
+
 /* icon */
 .trekking-cos .cos .cos-des img {
     width: 50px;
@@ -230,9 +211,8 @@ section.trekking .trekking-cos {
     display: block;
     font-size: 20px;
     font-weight: 400;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
-
 
 .trekking-cos .cos .cos-des p {
     font-weight: 400;
@@ -240,36 +220,39 @@ section.trekking .trekking-cos {
     opacity: 0;
 }
 
+/* hover효과 */
+.trekking-cos .cos:hover h2 img {
+    transform: scale(1.2);
+}
+
+.trekking-cos .cos:hover .cos-des p {
+    opacity: 1;
+}
+
 /* *location *********************************/
 
 section.location {
-    /* padding-top: 180px; */
     background-color: #F5F5F2;
 }
+
 section.location .inbox {
-    margin-top: 120px; /* 고정된 header 높이만큼! */
     height: calc(100% - 120px);
 
     width: 1280px;
     margin: 120px auto 0;
-
-    /* background-color: yellow; */
 }
-
-/* .location article {
-    width: 1280px;
-    margin: 0 auto;
-} */
 
 section.location .title-box {
     margin-bottom: 20px;
     text-indent: 20px;
 }
+
 section.location .title-box h2 {
     display: inline-block;
     font-size: 36px;
     font-weight: 700;
 }
+
 section.location .title-box p {
     display: inline-block;
     font-size: 20px;
@@ -277,39 +260,21 @@ section.location .title-box p {
     margin-left: 20px;
 }
 
-/* section.location .map h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #6C7A6D;
-}
-section.location .map h2 span {
-    font-size: 20px;
-    color: #999;
-    font-weight: 400;
-    padding-left: 40px;
-} */
-
 section.location article {
     width: 50%;
     height: 100%;
     float: left;
-
-    /* outline: 2px solid blue; */
 }
 
 section.location article.map {
     padding-bottom: 10%;
     box-sizing: border-box;
 }
+
 section.location iframe {
     width: 100%;
     height: 100%;
-    /* width: 1280px;
-    height: 400px;
-    margin: 0 auto; */
     border: none;
-    /* margin-bottom: 60px; */
 }
 
 section.location article.location-des {
@@ -317,46 +282,42 @@ section.location article.location-des {
     box-sizing: border-box;
 }
 
-.location-des .addres {
-    margin-bottom: 50px;
-    color: #999;
-    font-size: 20px;
-}
-
 .location-des .traffic {
-    text-align: center;
+    transform: translateY(62%);
 }
-
-.location-des .traffic img {
-    margin-bottom: 20px;
+.location-des .traffic .subway {
+    margin-bottom: 80px;
+}
+.location-des .traffic .traffic-des {
+    margin-bottom: 40px;
+}
+.location-des .traffic .traffic-des img {
     display: inline-block;
 }
-
-.location-des .traffic p {
-    margin-bottom: 60px;
+.location-des .traffic .traffic-des p {
+    display: inline-block;
+    margin-left: 10px;
     font-size: 20px;
 }
-
-.location-des .traffic a {
-    display: inline-block;
+.location-des .traffic img, .location-des .traffic p {
+    vertical-align: bottom;
+}
+.location-des .traffic .btn {
+    display: block;
     color: #6C7A6D;
     border: 2px solid #6C7A6D;
     border-radius: 10px;
     padding: 6px 12px;
-    margin: 0 10px;
+    margin: 10px;
     font-size: 16px;
+    width: 25%;
+    text-align: center;
 }
 
 .location-des .traffic a:hover {
     background-color: #6C7A6D;
     color: #F5F5F2;
 }
-
-.location-des .traffic .traffic-box {
-    /* float: left;
-    width: 50%; */
-}
-
 
 /* 메인페이지 footer 처리 */
 footer {
