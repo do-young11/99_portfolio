@@ -48,8 +48,6 @@ $(function () {
             scrollTop: pageH + 'px'
         }, 800, function () {
             stat = 0;
-            logo();
-            $('.logo a img').attr('src','img/logo.png');
         });
 
         if(pageCount===1){
@@ -80,6 +78,7 @@ $(function () {
                     },500)
                 }
             );
+            logoW();
         }else{
             logo();
         };
