@@ -51,7 +51,9 @@ section.room-banner .banner li img {
     text-align: center;
     border-bottom: 1px solid #999;
 }
-
+.room-type-wrap li {
+    display: inline-block;
+}
 .room-type-wrap li a {
     font-family: "Lato", sans-serif;
     color: rgba(255,255,255,0.6);
