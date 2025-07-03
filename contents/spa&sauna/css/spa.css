@@ -11,10 +11,12 @@ font-family: "Lato", sans-serif;
 font-weight: 100|300|400|700;
 */
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
+
 body {
     background-color: #F5F5F2;
 }
@@ -27,76 +29,107 @@ section {
 }
 
 /* spa-main ************************************ */
-.spa-main {
+.spa-main .main-des {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 .spa-main .main-des h2.txt-en {
     font-size: 96px;
     color: #7E6A58;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    transform: translateX(10%);
+    position: absolute;
+    left: 10%;
     letter-spacing: 2px;
 }
+
 .spa-main .main-des .des {
     position: absolute;
-    left: 20%;
+    left: 12%;
     bottom: 18%;
 }
+
 .spa-main .main-des .des h2.txt-ko {
     font-size: 42px;
     color: #6C7A6D;
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 .spa-main .main-des .des p {
     font-size: 20px;
+    font-weight: 400;
 }
 
 .spa-main .main-des .imgs img {
     position: absolute;
     right: 4%;
-    top: 24%;
-    display: inline-block;
+    top: 13%;
     display: none;
 }
+
 .spa-main .main-des .imgs img:first-child {
     right: 40%;
-    top: 32%;
+    top: 18%;
 }
 
 /* spa-list****************************************************** */
 .spa-list {
+    width: 100%;
+    height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .spa-list .wrap-box {
-    width: 100%;
+    width: 200%;
     position: absolute;
-    right: -50%;
+    left: 0;
+    padding-left: 3%;
+    box-sizing: border-box;
+    cursor: pointer;
 }
-.spa-list .spa-box  {
-    width: 23.5%;
+.spa-list .spa-box {
+    width: 11.2%;
     float: left;
     margin-top: 80px;
 }
+
 .spa-list .spa-box~.spa-box {
-    margin-left: 2%;
+    margin-left: 1%;
 }
+
 .spa-list .spa-box img {
     width: 100%;
     margin-bottom: 40px;
 }
-.spa-list .spa-box .spa-des  {
+
+.spa-list .spa-box .spa-des {
     padding: 0 10px;
     word-break: keep-all;
 }
+
 .spa-list .spa-box .spa-des h3 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #6C7A6D;
 }
+
 .spa-list .spa-box .spa-des p {
     font-size: 18px;
     font-weight: 400;
 }
+
+/* 드래그 제이쿼리를 위한 css */
+.disableselect {
+    -webkit-user-select: none;
+    /*Chrome/Safari/Opera*/
+    -ms-user-select: none;
+    /*IE/Edge*/
+    -moz-user-select: none;
+    /*Firefox*/
+    user-select: none;
+}
+

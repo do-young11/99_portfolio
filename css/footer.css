@@ -20,6 +20,7 @@ footer .foot-link ul {
 
 footer .foot-link ul li {
     margin-right: 10px;
+    float: left;
 }
 
 footer .foot-link ul li a {

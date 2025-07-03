@@ -22,9 +22,7 @@ $(function () {
                 fontSize: '2rem',
                 color:'#fff'
             });
-            $('>.list-des p',this).show(500).css({
-                color:'#fff'
-            });
+
         },
 
         function(){
@@ -32,14 +30,32 @@ $(function () {
                 width: '20%',
             });
 
-            $('>.list-des h3',this).fadeIn(500).css({
+            $('>.list-des h3',this).animate({
                 fontSize: '1.5rem',
                 color: 'rgba(255,255,255,0.8)'
             });
-
-            $('>.list-des p',this).hide();
         }
     );
+
+    // modal
+    $('.list').click(function(e){
+        e.preventDefault();
+
+        var listidx = $(this).index();
+        console.log(listidx);
+
+        $('.modalbg').fadeIn().css({
+            zIndex: 99
+        });
+        
+        $('.pop').eq(listidx).fadeIn().css({
+            zIndex: 101
+        });
+    });
+
+    $('#modal').click(function(){
+        $('.modalbg, .pop').hide();
+    });
 });
 
 

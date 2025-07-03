@@ -10,6 +10,96 @@ font-weight: 100~900;
 font-family: "Lato", sans-serif;
 font-weight: 100|300|400|700;
 */
+/* modal */
+#modal {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+.modalbg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 109%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+#modal .pop {
+    display: none;
+    width: 800px;
+    height: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6C7A6D;
+}
+#modal .pop .des-box {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.cha .des-box {background-image: url(../img/program1.jpg);}
+.yoga .des-box {background-image: url(../img/program2.jpg);}
+.digital .des-box {background-image: url(../img/program3.jpg);}
+.cart .des-box {background-image: url(../img/program4.jpg);}
+.star .des-box {background-image: url(../img/program5.jpg);}
+
+#modal .pop .des-box::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#modal .pop .des-box p {
+    color: #f5f5f2;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 2rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#modal .pop .info-box {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#modal .pop .info-box p {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.25rem;
+    font-weight: 400;
+    word-break: keep-all;
+    line-height: 2rem;
+}
+#modal .pop .info-box p:nth-child(4) {
+    margin-bottom: 20px;
+}
+#modal .pop .info-box p span {
+    color: #f5f5f2;
+    font-weight: 500;
+}
 section {
     background-color: #f5f5f2;
     padding: 180px 0 20px;
@@ -43,6 +133,7 @@ section .container .title p {
     position: relative;
     box-sizing: border-box;
     height: 610px;
+    z-index: 97;
 }
 .list-wrap ul .list a {
     width: 100%;
@@ -88,3 +179,5 @@ section .container .title p {
     word-break: keep-all;
     display: none;
 }
+
+

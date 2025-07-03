@@ -13,20 +13,6 @@ li {
     list-style: none;
 }
 
-li {
-    display: inline-block;
-}
-
-/* li 나열 확인해 보고 reset 변경하세요~ */
-/* ul::after, ol::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-li {
-    float: left;
-} */
-
 a {
     text-decoration: none;
 }
