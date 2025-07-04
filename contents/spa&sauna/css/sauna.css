@@ -49,6 +49,7 @@ section {
     position: absolute;
     left: 12%;
     bottom: 18%;
+    z-index: 100;
 }
 
 .sauna-main .main-des .des h2.txt-ko {
