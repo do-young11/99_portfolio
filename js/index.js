@@ -81,7 +81,14 @@ $(function () {
                 color: '#f5f5f2'
             });
         } else {
-            logo();
+            // logo();
+            $('.logo a img').attr('src', 'img/logo.png');
+            $('.gnb a').css({
+                color: '#3E3E3B '
+            });
+            $('.sub-menu li a').css({
+                color: '#3E3E3B'
+            });
         };
 
     });//mousewheel
