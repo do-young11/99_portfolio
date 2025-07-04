@@ -13,6 +13,7 @@ var stat = 0;
 $(function () {
 
     fade();
+
     //mousewheel////////////////////////////////////////////////////////////////////////////////////
     total = $('.page').length;
     console.log(total);
@@ -41,8 +42,6 @@ $(function () {
 
         var pageH = $('.page').eq(pageCount).offset().top;
         console.log('페이지 길이' + pageH);
-
-        $('.font h2, .font p').hide();
 
         $('html, body').animate({
             scrollTop: pageH + 'px'
@@ -76,13 +75,13 @@ $(function () {
                 }
             );
             // logoW();
-            $('.logo a img').attr('src', '../img/logo_w.png');
+            $('.logo a img').attr('src', '/img/logo_w.png');
             $('.gnb a').css({
                 color: '#f5f5f2'
             });
         } else {
             // logo();
-            $('.logo a img').attr('src', '../img/logo.png');
+            $('.logo a img').attr('src', '/img/logo.png');
             $('.gnb a').css({
                 color: '#3E3E3B '
             });
