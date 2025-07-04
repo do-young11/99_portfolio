@@ -13,7 +13,6 @@ var stat = 0;
 $(function () {
 
     fade();
-
     //mousewheel////////////////////////////////////////////////////////////////////////////////////
     total = $('.page').length;
     console.log(total);
@@ -43,51 +42,45 @@ $(function () {
         var pageH = $('.page').eq(pageCount).offset().top;
         console.log('페이지 길이' + pageH);
 
+        $('.font h2, .font p').hide();
+
         $('html, body').animate({
             scrollTop: pageH + 'px'
         }, 800, function () {
             stat = 0;
         });
 
-        if (pageCount === 1) {
+        if(pageCount===1){
             resetAction();
 
             fadeAction();
-        } else if (pageCount === 2) {
-            resetAction();
+        };
+        if(pageCount===2){
+            resetAction(); 
 
             fadeAction();
-        } else if (pageCount === 3) {
-            resetAction();
+        };
+        if(pageCount===3) {
+            resetAction(); 
 
             fadeAction();
-        } else if (pageCount === 4) {
+        };
+        if(pageCount===4) {
             $('.cos').hover(
-                function () {
+                function(){
                     $(this).animate({
                         backgroundSize: '120%'
-                    }, 500);
+                    },500);
                 },
-                function () {
+                function(){
                     $(this).animate({
                         backgroundSize: '100%'
-                    }, 500);
+                    },500);
                 }
             );
-            // logoW();
-            $('.logo a img').attr('src', '/img/logo_w.png');
-            $('.gnb a').css({
-                color: '#f5f5f2'
-            });
-        } else {
-            // logo();
-            $('.logo a img').attr('src', '/img/logo.png');
-            $('.gnb a').css({
-                color: '#3E3E3B '
-            });
-            $('.sub-menu li a').css({
-                color: '#3E3E3B'
-            });
+            logoW();
+        }else{
+            logo();
         };
 
     });//mousewheel
@@ -99,14 +92,14 @@ function fade() {
     $('.intro p').delay(1000).fadeIn(800);
 };
 
-function resetAction() {
-    $('.des-box h2').css('opacity', 0);
-    $('.des-box p').css('opacity', 0);
+function resetAction (){
+    $('.des-box h2').css('opacity',0);
+    $('.des-box p').css('opacity',0);
 
 }
-function fadeAction() {
+function fadeAction (){
     $('.des-box h2').animate({
-        opacity: 1
+        opacity : 1
     }, 2000);
 
     $('.des-box p').delay(1200).animate({
