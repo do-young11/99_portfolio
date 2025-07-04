@@ -33,17 +33,13 @@ section .banner h2 {
     transform: translate(-50%);
 }
 section article.convenience-spa, article.convenience-sauna {
-    width: 100%;
-    max-width: 1280px;
+    width: calc(100% - 200px);
     margin: 0 auto;
 }
 section article h3 {
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 40px;
-}
-section article .con {
-    width: 100%;
 }
 
 section article .list-box > img {

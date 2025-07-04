@@ -118,7 +118,7 @@ section.amenitie .amenitie-des {
 .amenitie-des .des-box {
     color: #F5F5F2;
     position: absolute;
-    right: 0;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
 }

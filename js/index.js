@@ -75,7 +75,7 @@ $(function () {
                 function(){
                     $(this).animate({
                         backgroundSize: '100%'
-                    },500)
+                    },500);
                 }
             );
             logoW();
