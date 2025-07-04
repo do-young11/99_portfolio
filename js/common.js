@@ -4,10 +4,10 @@ function logo (){
     $('.logo a img').attr('src','img/logo.png');
     $('.gnb a').css({
         color: '#3E3E3B '
-    })
+    });
     $('.sub-menu li a').css({
         color: '#3E3E3B'
-    })
+    });
 };
 
 
@@ -16,5 +16,5 @@ function logoW (){
     $('.logo a img').attr('src','../img/logo_w.png');
     $('.gnb a').css({
         color: '#f5f5f2'
-    })
+    });
 };
