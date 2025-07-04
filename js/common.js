@@ -1,7 +1,7 @@
 
 // 로고 기본 버전
 function logo (){
-    $('.logo a img').attr('src','../img/logo.png');
+    $('.logo a img').attr('src','img/logo.png');
     $('.gnb a').css({
         color: '#3E3E3B '
     })
