@@ -13,7 +13,7 @@ function logo (){
 
 //로고 화이트버전
 function logoW (){
-    $('.logo a img').attr('src','/img/logo_w.png');
+    $('.logo a img').attr('src','img/logo_w.png');
     $('.gnb a').css({
         color: '#f5f5f2'
     });
