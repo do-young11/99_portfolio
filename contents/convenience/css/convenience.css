@@ -109,15 +109,15 @@ button {
 button img {
     height: 100%;
 }
-.prev {left: -8%;}
-.next {right: -8%;}
+.prev {left: -4%;}
+.next {right: -4%;}
 
 section .convenience-sauna {
     margin-bottom: 120px;
 }
 .convenience-sauna .list-wrap .list-box {
     float: left;
-    width: 31.3%;
+    width: 26%;
     margin-right: 2%;
     margin-bottom: 40px;
     border: 1px solid #B5C1BA;
